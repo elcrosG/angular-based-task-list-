@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a style="cursor: default;" class="navbar-brand text-success" href="javascript:void(0)">Task Tracker App</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+        <form class="d-flex" role="search">
+            <button *ngIf="!isLoggedIn" [routerLink]="['/login']" id="loginbtn" class="btn btn-outline-success" [routerLinkActive]="['btn-success', 'text-white']">Login</button>
+            <button *ngIf="isLoggedIn" id="loginbtn" (click)="this.logS.setLoggedIn()" class="btn btn-danger">Logout</button>
+            <button *ngIf="!isLoggedIn" id="regbtn" class="btn btn-outline-success ms-1 " [routerLink]="['/register']" [routerLinkActive]="['btn-success', 'text-white']" >Register</button>
+        </form>
+      </div>
+    </div>
+</nav>
+<div class="container col-md-6 col-sm-12 mt-4 mb-4 p-4">
+    <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,174 @@
+{
+  "tasks": [
+    {
+      "text": "Task 1",
+      "day": "2022-06-24",
+      "time": "18:00",
+      "reminder": true,
+      "id": 1,
+      "userid": 1
+    },
+    {
+      "text": "Task 4",
+      "day": "2022-06-27",
+      "time": "10:05",
+      "reminder": false,
+      "id": 4,
+      "userid": 1
+    },
+    {
+      "text": "Task 5",
+      "day": "2022-06-20",
+      "time": "18:55",
+      "reminder": false,
+      "id": 5,
+      "userid": 1
+    },
+    {
+      "text": "c#",
+      "day": "2022-06-24",
+      "time": "16:20",
+      "id": 6,
+      "reminder": true,
+      "userid": 1
+    },
+    {
+      "text": "c#2",
+      "day": "2022-06-24",
+      "time": "16:20",
+      "id": 6,
+      "reminder": false,
+      "userid": 2
+    },
+    {
+      "text": "c#3",
+      "day": "2022-06-24",
+      "time": "16:20",
+      "id": 6,
+      "reminder": false,
+      "userid": 3
+    },
+    {
+      "text": "ksofkof",
+      "day": "2022-06-29",
+      "time": "13:32",
+      "reminder": true,
+      "userid": 1,
+      "id": 7
+    },
+    {
+      "text": "ksofkofx",
+      "day": "2022-06-29",
+      "time": "14:21",
+      "reminder": true,
+      "userid": 1,
+      "id": 8
+    },
+    {
+      "text": "Deneme görev 1",
+      "day": "2022-06-29",
+      "time": "17:43",
+      "reminder": true,
+      "userid": 7,
+      "id": 9
+    },
+    {
+      "text": "Deneme görev 1",
+      "day": "2022-06-30",
+      "time": "14:25",
+      "reminder": true,
+      "userid": 9,
+      "id": 10
+    },
+    {
+      "text": "Task 1",
+      "day": "2022-07-01",
+      "time": "10:14",
+      "reminder": true,
+      "userid": 9,
+      "id": 11
+    },
+    {
+      "text": "Task 5",
+      "day": "2022-07-01",
+      "time": "14:21",
+      "reminder": true,
+      "userid": 9,
+      "id": 13
+    },
+    {
+      "text": "Task 5",
+      "day": "2022-07-01",
+      "time": "15:45",
+      "reminder": false,
+      "userid": 9,
+      "id": 17
+    },
+    {
+      "text": "C#",
+      "day": "2022-07-01",
+      "time": "15:47",
+      "reminder": false,
+      "userid": 9,
+      "id": 18
+    }
+  ],
+  "users": [
+    {
+      "uName": "Deneme",
+      "uPass": "deneme123123",
+      "isLogged": false,
+      "id": 1
+    },
+    {
+      "uName": "dksd",
+      "uPass": "kdfdkfdk",
+      "isLogged": false,
+      "id": 2
+    },
+    {
+      "uName": "deneme",
+      "uPass": "fksdfksdkfdkf",
+      "isLogged": false,
+      "id": 3
+    },
+    {
+      "uName": "kdfkdfk",
+      "uPass": "dfdfdf",
+      "isLogged": false,
+      "id": 4
+    },
+    {
+      "uName": "deneme",
+      "uPass": "g",
+      "isLogged": false,
+      "id": 5
+    },
+    {
+      "uName": "deneme kayıt",
+      "uPass": "denem",
+      "id": 6
+    },
+    {
+      "uName": "Elcros",
+      "uPass": "kaan123123",
+      "id": 7
+    },
+    {
+      "uName": "denemehesap",
+      "uPass": "1",
+      "id": 8
+    },
+    {
+      "uName": "Kaan",
+      "uPass": "deneme",
+      "id": 9
+    }
+  ],
+  "active": [
+    {
+      "userid": 0,
+      "id": 1
+    }
+  ]
+}

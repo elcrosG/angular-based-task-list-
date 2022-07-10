@@ -1,0 +1,62 @@
+.hidden{
+    display: none;
+}
+.task{
+    background: #f4f4f4;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.task.reminder{
+    border-left: 5px solid #198754;
+}
+.task h3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.example-full-width {
+    width: 100%;
+  }
+.timepicker::-webkit-calendar-picker-indicator {
+  filter: invert(45%) sepia(1%) saturate(2193%) hue-rotate(3deg) brightness(93%) contrast(78%);
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  background-repeat: no-repeat;
+  display: inline-block;
+  fill: currentColor;
+  height: 24px;
+  width: 24px;
+  overflow: hidden;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+/* Ripple effect */
+.timepicker::-webkit-calendar-picker-indicator {
+  background-position: center;
+  transition: background 1.2s;
+  border-radius: 125px;
+}
+.timepicker::-webkit-calendar-picker-indicator:hover {
+  text-shadow: 1px 1px 7px #030303;
+}
+.timepicker::-webkit-calendar-picker-indicator:active {
+  background-color: #0000002c;
+  background-size: 100%;
+  transition: background 0s;
+}
+.timepicker::-webkit-calendar-picker-indicator:enabled{
+  filter: invert(90%) sepia(1%) saturate(2193%) hue-rotate(3deg) brightness(93%) contrast(78%);
+}
+

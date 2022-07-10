@@ -1,0 +1,22 @@
+<mat-card class="p-4">
+    <div class="row justify-content-center">
+        <div class="col-10">
+            <form [formGroup]="logForm" (ngSubmit)="login()">
+                <h3>Login</h3>
+                <mat-form-field class="w-100" appearance="fill">
+                    <mat-label>Enter your username</mat-label>
+                    <input formControlName="uName" matInput>
+                </mat-form-field>
+                <mat-form-field class="w-100" appearance="fill">
+                    <mat-label>Enter your password</mat-label>
+                    <input formControlName="uPass" matInput [type]="hide ? 'password' : 'text'">
+                    <button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                </mat-form-field>
+                <button type="submit" style="background-color: #198754; color:white;" mat-raised-button>Submit</button>
+                <p style="float:right;">or <a [routerLink]="['/register']" routerLinkActive="router-link-active" >register</a></p>
+            </form>
+        </div>
+    </div>
+</mat-card>

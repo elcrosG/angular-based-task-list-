@@ -1,0 +1,45 @@
+
+<mat-card class="p-4">
+    <div class="row justify-content-center">
+        <div class="col-8">
+            <h3>{{title}}</h3>
+        </div>
+        <div class="col-4">
+            <button class="btn" [ngStyle]="{'float': 'right', 'background-color': showAddTask ? '#871919' : '#198754', 'color': '#ffffff'}" (click)="toggleAddTask()">{{btnText}}</button>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <form *ngIf="showAddTask" [formGroup]="addForm"  (ngSubmit)="onSubmit();" #add="ngForm">
+
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Task</mat-label>
+                    <input formControlName="text" style="width: 100%;" matInput placeholder="Enter Task" name="text" id="text">
+                </mat-form-field>
+            
+                <mat-form-field color="indigo" class="example-full-width" appearance="fill">
+                    <mat-label>Choos a date</mat-label>
+                    <input name="day" class="timepicker" formControlName="day" style="width: 100%;" min="{{currentDate}}" matInput type="date" name="time" id="time" placeholder="Enter Time">
+                </mat-form-field>
+            
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Choos a time</mat-label>
+                    <input class="timepicker" formControlName="time" style="width: 100%;" matInput type="time" name="time" id="time" placeholder="Enter Time">
+                </mat-form-field>
+            
+                <div style="border: none!important;" class="form-control form-control-checkbox">
+                    <label for="reminder">Set Reminder</label><br>
+                    <mat-slide-toggle formControlName="reminder" name="reminder" id="reminder"></mat-slide-toggle>
+                </div>
+                <div style="border: none!important;" class="form-control">
+                    <input style="width: 100%;" type="submit" class="btn btn-success" value="Add Task">
+                </div>
+            
+            </form>
+            <div  *ngFor="let task of tasks"[ngClass]="{reminder: task.reminder}" class="task" (dblclick)="upTask(task)">
+                <h3>{{task.text}} <fa-icon (click)="openDialog(task)" [ngStyle]="{'color': '#871919', 'font-size': '18px'}" [icon]="faTimes"></fa-icon></h3>
+                <p>{{task.day}} {{task.time}}</p>
+            </div>
+        </div>
+    </div>
+</mat-card>
