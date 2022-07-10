@@ -1,4 +1,4 @@
-# Test
+# I did this project on my internship in Hemosoft. I practice with typescript, angular, angular material, json server, api connection and html methods. The task list work with local json server and you can register to system. All users have their task list.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
 
